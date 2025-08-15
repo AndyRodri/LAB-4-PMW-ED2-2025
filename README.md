@@ -1,5 +1,5 @@
 # LAB-4-PMW-ED2-2025
-// LAB 4 PWM + Servo + Switches + Botones (versión DEBUG)
+
 #include <Arduino.h>
 #include <ESP32Servo.h>
 
@@ -129,7 +129,7 @@ void loop() {
   }
   lastLeftBtn = leftBtn;
 
-  // Log periódico de estados (cada 1 s)
+  // Lógica de estados (cada 1 s)
   if (millis() - tPrint > 1000) {
     tPrint = millis();
     Serial.print("Estados: SC="); Serial.print(switchColor);
